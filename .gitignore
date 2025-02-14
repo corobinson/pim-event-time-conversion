@@ -1,0 +1,4 @@
+/data_files/input/*
+/data_files/output/*
+.venv
+**/__pycache__
