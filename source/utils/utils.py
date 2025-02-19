@@ -25,5 +25,7 @@ def translate_timezone(time_zone_string: str) -> tzinfo:
     elif(time_zone_string == 'Mountain Time'):
         return pytz.timezone('US/Mountain')
     else:
+        print('***********************************')
         print(f'Timezone String {time_zone_string} is not mapped. Returning None.')
+        print('***********************************')
         return None # To throw an error when the value is used so I know I need to map a new TZ

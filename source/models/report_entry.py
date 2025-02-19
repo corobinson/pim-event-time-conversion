@@ -5,7 +5,8 @@ class ReportEntry:
                  stibo_matches_converted: bool,
                  event_date:str, 
                  event_time:str, 
-                 property_tz:str):
+                 property_tz:str,
+                 is_data_valid:bool):
         self.id = id
         self.stibo_utc = stibo_utc
         self.converted_event_utc = converted_event_utc
@@ -13,6 +14,7 @@ class ReportEntry:
         self.event_date = event_date
         self.event_time = event_time
         self.property_tz = property_tz
+        self.is_data_valid = is_data_valid
     
     def as_dict(self):
         return {
